@@ -9,3 +9,6 @@ Features:
 - [x] Checking if their guess is correct or not.
 - [x] Showing indications that relates if their guess is correct or not by gving visual feedback.
 - [x] Ending the game after 6 wrong guesses.
+- [ ] Add instructions on how to play the game.
+- [ ] Add a reset button.
+- [ ] Add a random word for every new game.
