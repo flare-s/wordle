@@ -1,7 +1,7 @@
 # wordle
 <p>An attempt to make a clone of Wordle.</p>
 
-[live page](https://flare-s.github.io/wordle/).
+[wordle-clone](https://flare-s.github.io/wordle/).
 <hr/>
 
 Features: 
