@@ -5,7 +5,7 @@
 <hr/>
 
 Features: 
-[x] The user is able to add a guess through either the on-screen keyboard or the keyboard on their devices.
-[x] Checking if their guess is correct or not.
-[x] Showing indications that relates if their guess is correct or not by gving visual feedback.
-[x] Ending the game after 6 wrong guesses.
+- [x] The user is able to add a guess through either the on-screen keyboard or the keyboard on their devices.
+- [x] Checking if their guess is correct or not.
+- [x] Showing indications that relates if their guess is correct or not by gving visual feedback.
+- [x] Ending the game after 6 wrong guesses.
