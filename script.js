@@ -103,7 +103,7 @@ const checkFinalAnswer = (guess, answer) => {
         guessPosition = 0;
         // if the final row is full and the answer is wrong, show a game over message.
         if (rowPosition > 5) {
-            generateMessage("Game over. Better luck next time.")
+            generateMessage(`Game over. The correct answer was "${answer}". Better luck next time.`)
             gameOver = true;
             resetButton.classList.remove("hidden");
             return;

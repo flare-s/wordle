@@ -119,6 +119,19 @@ main {
     border: none;
 }
 
+.reset {
+    display: block;
+    width: 120px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #2f4f4f;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .reset.hidden {
     display: none;
 }
