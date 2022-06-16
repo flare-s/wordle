@@ -2,6 +2,7 @@ const keyboard = document.querySelector(".keyboard");
 const rows = document.querySelector(".rows");
 
 const message = document.querySelector(".message");
+const resetButton = document.querySelector(".reset");
 
 // Keyboard inputs 
 const strokes = [
@@ -19,6 +20,24 @@ let rowPosition = 0;
 let guessPosition = 0;
 let gameOver = false;
 
+
+const handleReset = (event) => {
+    gameOver = false;
+    rowPosition = 0;
+    guessPosition = 0;
+    rows.querySelectorAll(".row").forEach(row => { 
+        let guesses = row.querySelectorAll(".guess").forEach(guess => {
+            guess.className = "guess";
+            guess.textContent = "";
+        })
+    });
+
+    keyboard.querySelectorAll(".key").forEach((key) => {
+        key.className = "key";
+    });
+    event.target.classList.add("hidden");
+
+}
 
 // Create the keyboard inputs and put it on page
 const createButtons = () => {
@@ -84,8 +103,9 @@ const checkFinalAnswer = (guess, answer) => {
         guessPosition = 0;
         // if the final row is full and the answer is wrong, show a game over message.
         if (rowPosition > 5) {
-            generateMessage("Game over. Better luck next time.")
+            generateMessage(`Game over. The correct answer was "${answer}". Better luck next time.`)
             gameOver = true;
+            resetButton.classList.remove("hidden");
             return;
         }
     }
@@ -212,6 +232,6 @@ const handlePress = (e) => {
 
 
 window.addEventListener("keyup", (e) => handlePress(e));
-
+resetButton.addEventListener("click", handleReset);
 createButtons();
 createGuessBoxes();
